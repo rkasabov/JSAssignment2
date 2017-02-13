@@ -226,10 +226,7 @@ let longestWrds = function longestWords(txt) {
 
         words.sort(stringSort);
 
-        //Make sure its only the 10 longest words
-        words.slice(MIN, MAX);
-
-            //Remove any duplicates
+        //Remove any duplicates
         for (let i in words) {
 
             //If the final array doesn't contain the word, add it
@@ -242,7 +239,7 @@ let longestWrds = function longestWords(txt) {
     }
 
 
-    return longWordArr;
+    return longWordArr.slice(MIN, MAX);
 
 
 
