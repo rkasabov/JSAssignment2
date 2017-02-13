@@ -390,10 +390,9 @@ let mostFreqWords = function mostFrequentWords(txt) {
             finalFreqWordArr[i] = freqWordArr[i].word + "(" + freqWordArr[i].frequency + ")";
         }
 
-        finalFreqWordArr.slice(MIN, MAX);
+        
     }
-
-    return finalFreqWordArr;
+    return finalFreqWordArr.slice(MIN, MAX);
 
 }
 
